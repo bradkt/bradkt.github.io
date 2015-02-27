@@ -1,0 +1,52 @@
+header {
+    background-color:black;
+    color:white;
+    /*text-align:center;*/
+    text-indent: 8%;
+    padding:5px;   
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:1300px;
+    width:16%;
+    float:left;
+    padding:5px;        
+}
+section {
+    width:50%;
+    float:left;
+    padding:12px;    
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+.social {
+    /*border: 1px black solid;*/
+    display: inline-block;
+    text-align:center;
+  	margin: 0 1em 0 1em;
+  	height:200px;
+  	width: 10%
+}
+
+.about {
+    line-height:30px;
+    background-color:;
+    height:800px;
+    width:24%;
+    float:right;
+    padding:5px;
+}
+.image {
+	display: block;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+}  
+}
