@@ -1,0 +1,163 @@
+body *
+  font-family: 'Roboto', sans-serif
+
+body
+  margin: auto
+  width: 100%
+  // height: 1000px
+  position: fixed
+
+.round-img
+    width: 100px
+    height: 100px
+    border-radius: 50%
+
+header
+    background-image: url("../media/jelly.jpg")
+    background-repeat: no-repeat
+    width: 100%
+    height: 670px
+    background-size: cover
+    padding-top: 2vw
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+
+    h2
+        color: rgba($deep-ocean,.6)
+        font-size: 4vw
+
+    nav
+        display: flex
+
+        a
+            color: $blue
+            font-size: 2vw
+            margin: .8vw
+
+div.social
+    width: 95%
+    // margin: 10vw auto
+    // z-index: 1
+    top: 25vw
+    right: 1vw
+    position: absolute
+    
+    div
+        display: flex
+        flex-direction: column
+        text-align: right
+        top: 5vw
+        right: 1vw
+
+        i
+            margin: .5vw
+            color: $white
+
+.hide
+    display: none
+
+section.intro
+    position: absolute
+    top: 10vw
+    left: 5vw
+    width: 80%
+    margin: auto
+
+    h1
+        font-size: 5vw
+        color: $white
+
+
+section.about
+    position: absolute
+    top: 10vw
+    left: 5vw
+    width: 80%
+    margin: auto
+    height: 550px
+    overflow-y: scroll
+
+    // div.round-img
+    // background-image: url("../media/sqCheeseFace.jpg")
+    // background-repeat: no-repeat
+
+section.education
+    position: absolute
+    top: 10vw
+    left: 5vw
+    width: 80%
+    margin: auto
+    height: 550px
+    overflow-y: scroll
+
+section.portfolio
+    position: absolute
+    top: 10vw
+    left: 5vw
+    width: 80%
+    margin: auto
+    height: 550px
+    overflow-y: scroll
+
+footer
+    position: absolute
+    bottom: 0px
+    left: 1vw
+    // @include linear-gradient(to top, #8fdce5, #3dc3d1);
+
+    p
+        position: absolute
+        bottom: 0px
+        left: 1vw
+        color: $blue
+
+@media screen and ($width-name : $target-width)
+  header
+    background-image: url("../media/jelly-sm.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+
+    h2
+      margin-left: 5vw
+      font-size: 5vw
+      width: 20px
+
+    nav
+      display: flex
+      flex-wrap: wrap
+      height: 15vw
+      // border: 1px solid red
+      margin-left: 12vw
+
+      a
+        color: $blue
+        font-size: 4vw
+        // margin: 0vw 10vw
+        padding: 1vw 10vw
+
+  section.intro
+    padding-top: 15vw
+    top: 20vw
+    left: 5vw
+
+    h1
+      font-size: 10vw
+      font-weight: bold
+      color: rgba(red, 0.5)
+
+  div.social a i
+    margin: 3vw
+    color: $white
+
+  section.about
+    top: 25vw
+    left: 5vw
+
+  section.education
+    top: 25vw
+    left: 5vw
+
+  section.portfolio
+    top: 25vw
+    left: 5vw
