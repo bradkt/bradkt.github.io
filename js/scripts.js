@@ -14,5 +14,12 @@ $(document).ready(function(){
             }
         });
    }
+
+   $(function(){
+    $(".typed-element").typed({
+        strings: ["isn't that a cool jellyfish...","...I mean..", "I build websites...mostly"],
+        typeSpeed: 0
+    });
+  });
 });
 

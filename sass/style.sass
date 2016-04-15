@@ -1,3 +1,4 @@
+
 body *
   font-family: 'Roboto', sans-serif
 
@@ -6,6 +7,23 @@ body
   width: 100%
   // height: 1000px
   position: fixed
+
+::-webkit-scrollbar
+    width: 12px
+
+::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    border-radius: 10px
+ 
+::-webkit-scrollbar-thumb 
+    border-radius: 10px
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+
+.typed-cursor
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite
+    -moz-animation: blink 0.7s infinite
+    animation: blink 0.7s infinite
 
 .round-img
     width: 100px
@@ -16,7 +34,7 @@ header
     background-image: url("../media/jelly.jpg")
     background-repeat: no-repeat
     width: 100%
-    height: 670px
+    height: 100vh
     background-size: cover
     padding-top: 2vw
     display: flex
@@ -26,6 +44,9 @@ header
     h2
         color: rgba($deep-ocean,.6)
         font-size: 4vw
+        position: absolute
+        top: 3vw
+        left: 5vw
 
     nav
         display: flex
@@ -37,9 +58,7 @@ header
 
 div.social
     width: 95%
-    // margin: 10vw auto
-    // z-index: 1
-    top: 25vw
+    top: 20vw
     right: 1vw
     position: absolute
     
@@ -51,8 +70,8 @@ div.social
         right: 1vw
 
         i
-            margin: .5vw
-            color: $white
+            margin: 1vw .5vw 1vw 0vw
+            color: rgba($white,0.8)
 
 .hide
     display: none
@@ -65,9 +84,16 @@ section.intro
     margin: auto
 
     h1
-        font-size: 5vw
-        color: $white
+      font-size: 7vw
+      font-weight: bold
+      color: rgba(red, 0.5)
+      line-height: 90%
 
+    span  
+      font-size: 5vw
+      font-weight: normal
+      color: rgba(black, 0.7)
+      line-height: 90%
 
 section.about
     position: absolute
@@ -75,7 +101,7 @@ section.about
     left: 5vw
     width: 80%
     margin: auto
-    height: 550px
+    height: 470px
     overflow-y: scroll
 
     // div.round-img
@@ -88,7 +114,7 @@ section.education
     left: 5vw
     width: 80%
     margin: auto
-    height: 550px
+    height: 470px
     overflow-y: scroll
 
 section.portfolio
@@ -97,7 +123,7 @@ section.portfolio
     left: 5vw
     width: 80%
     margin: auto
-    height: 550px
+    height: 470px
     overflow-y: scroll
 
 footer
@@ -112,29 +138,83 @@ footer
         left: 1vw
         color: $blue
 
-@media screen and ($width-name : $target-width)
+
+
+@media screen and ($width-name : $tablet-width)
   header
     background-image: url("../media/jelly-sm.jpg")
-    background-repeat: no-repeat
-    background-size: cover
+    // height: 1024px
+
+    nav
+
+      a
+        font-size: 3.5vw
+
+  div.social
+    top: 30vw
+    div
+
+      i
+        margin: 3vw 2vw 1vw 0vw
+
+  section.intro
+    top: 15vw
+    left: 5vw
+    height: 75vh
+
+    h1
+      font-size: 11vw
+      font-weight: bold
+      color: rgba(red, 0.5)
+
+    p
+      font-size: 3vw;
+
+  section.about
+    top: 15vw
+    left: 5vw
+    height: 75vh
+
+    p
+      font-size: 3vw;
+
+  section.education
+    top: 15vw
+    left: 5vw
+    height: 75vh
+
+    p
+      font-size: 3vw;
+
+  section.portfolio
+    top: 15vw
+    left: 5vw
+    height: 75vh
+
+    p
+      font-size: 3vw;
+
+
+@media screen and ($width-name : $phone-width)
+  header
 
     h2
-      margin-left: 5vw
       font-size: 5vw
       width: 20px
+      margin-right: 5vw
 
     nav
       display: flex
       flex-wrap: wrap
       height: 15vw
       // border: 1px solid red
-      margin-left: 12vw
+      margin-left: 45vw
 
       a
         color: $blue
         font-size: 4vw
         // margin: 0vw 10vw
-        padding: 1vw 10vw
+        padding: 1vw 5vw 1vw 5vw
 
   section.intro
     padding-top: 15vw
@@ -142,9 +222,12 @@ footer
     left: 5vw
 
     h1
-      font-size: 10vw
+      font-size: 11vw
       font-weight: bold
       color: rgba(red, 0.5)
+
+    p
+      font-size: 5vw;
 
   div.social a i
     margin: 3vw
@@ -153,11 +236,17 @@ footer
   section.about
     top: 25vw
     left: 5vw
+    p
+      font-size: 5vw;
 
   section.education
     top: 25vw
     left: 5vw
+    p
+      font-size: 5vw;
 
   section.portfolio
     top: 25vw
     left: 5vw
+    p
+      font-size: 5vw;
