@@ -1,4 +1,5 @@
 {
+  "homepage": "http://bradkt.github.io/freelancer",
   "name": "freelancer",
   "version": "0.1.0",
   "private": true,
@@ -10,11 +11,16 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1"
   },
+  "devDependencies": {
+    "gh-pages": "2.2.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
